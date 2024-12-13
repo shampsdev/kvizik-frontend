@@ -20,7 +20,7 @@ const QuizDisplay = () => {
   const [selectedOptions, setSelectedOptions] = useState<SelectedOptions>({})
 
   async function checkAnswers() {
-    const answers = quiz.questions.map((question: any, index: number) => {
+    const answers = quiz.questions.map((question: any) => {
       return {
         question_id: question.id,
         answer_id: selectedOptions[question.id],
