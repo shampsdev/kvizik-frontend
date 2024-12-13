@@ -2,13 +2,16 @@ import { useState } from "react"
 import ShadedButton from "./ShadedButton"
 import { useNavigate } from "react-router-dom"
 import uploadIcon from "../assets/upload-icon.svg"
+import { generateQuiz } from "@/lib/api"
 
 const UploadSection = () => {
   const [activeTab, setActiveTab] = useState("PDF")
   const navigate = useNavigate()
+  const [text, setText] = useState("")
 
   const handleGenerate = async () => {
-    navigate("/quiz")
+    const { test_id } = await generateQuiz(text)
+    navigate(`/quiz/${test_id}`)
   }
 
   return (
@@ -82,7 +85,12 @@ const UploadSection = () => {
               className="placeholder-textGray"
             />
           ) : (
-            <textarea placeholder="Введите текст" className="w-full h-auto" />
+            <textarea
+              placeholder="Введите текст"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              className="w-full h-auto"
+            />
           )}
         </div>
         <div className="rounded-xl w-full h-full absolute top-1 left-1 bg-black border"></div>

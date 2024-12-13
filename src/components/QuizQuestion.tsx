@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils"
 
 export type Question = {
-  questionText: string
-  options: { text: string; id: string }[]
+  text: string
+  answers: { text: string; id: string }[]
 }
 
 export default function QuizQuestion({
@@ -19,9 +19,9 @@ export default function QuizQuestion({
   return (
     <div className="border-[1.5px] border-black rounded-xl p-4 pb-6 mb-4 mt-8">
       <h3 className="mb-2">Вопрос 1</h3>
-      <p>What unique protein do tardigrades produce?</p>
+      <p>{question.text}</p>
       <ul className="flex flex-col gap-3 mt-2">
-        {question.options.map((option, index) => (
+        {question.answers.map((option, index) => (
           <div className="relative" key={option.id}>
             <div
               onClick={() =>

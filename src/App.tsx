@@ -4,8 +4,14 @@ import QuizDisplay from "./components/QuizDisplay"
 import Sidebar from "./components/Sidebar"
 import MobileHeader from "./components/MobileHeader"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { useEffect } from "react"
+import { getToken } from "./lib/api"
 
 function App() {
+  useEffect(() => {
+    getToken()
+  }, [])
+
   return (
     <Router>
       <MobileHeader />

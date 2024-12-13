@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ShadedButton from "./ShadedButton"
 import { useParams } from "react-router-dom"
 import QuizQuestion from "./QuizQuestion"
+import { fetchTestResult, getQuiz } from "@/lib/api"
 
 type SelectedOptions = {
   [questionId: string]: string | null
@@ -12,18 +13,27 @@ type Result = {
 }
 
 const QuizDisplay = () => {
-  // @ts-ignore
   const { quiz_id } = useParams()
 
   const [answers, setAnswers] = useState<string[] | null>(null)
   const [result, setResult] = useState<Result | null>(null)
   const [selectedOptions, setSelectedOptions] = useState<SelectedOptions>({})
 
-  function getAnswers() {
-    setAnswers(["123-123-123", "234", "51", "222"])
+  async function checkAnswers() {
+    const answers = quiz.questions.map((question: any, index: number) => {
+      return {
+        question_id: question.id,
+        answer_id: selectedOptions[question.id],
+      }
+    })
+    const { correct_answers, total_questions } = await fetchTestResult(
+      quiz_id!,
+      answers
+    )
+
     setResult({
-      correct_answers: 2,
-      total_questions: 3,
+      correct_answers,
+      total_questions,
     })
   }
   function restartQuiz() {
@@ -32,39 +42,17 @@ const QuizDisplay = () => {
     setResult(null)
   }
 
-  const quiz = {
-    title: "Название теста",
-    description:
-      "Описание Explore fascinating topics: tardigrade resilience, Chicago River ecology, Burmese python adaptations, olfactory system breathing, and the elusive Ivory-billed Woodpecker. Discover nature's wonders and scientific marvels.",
-    questions: [
-      {
-        id: "1",
-        questionText: "What unique protein do tardigrades produce?",
-        options: [
-          { text: "Dsup", id: "123-123-123" },
-          { text: "Hsp70", id: "234" },
-          { text: "Rad51", id: "51" },
-          { text: "p53", id: "222" },
-        ],
-      },
-      {
-        id: "2",
-        questionText: "What unique protein do tardigrades produce?",
-        options: [
-          { text: "Dsup", id: "123-123-123" },
-          { text: "Hsp70", id: "234" },
-          { text: "Rad51", id: "51" },
-          { text: "p53", id: "222" },
-        ],
-      },
-    ],
-  }
+  const [quiz, setQuiz] = useState<any>(null)
+
+  useEffect(() => {
+    getQuiz(quiz_id!).then((quiz) => setQuiz(quiz))
+  }, [])
 
   return (
     <div className="pt-4 w-full max-w-[840px]">
-      <h2 className="text-lg font-bold mb-4">
+      {/* <h2 className="text-lg font-bold mb-4">
         {result ? "Ваш результат:" : quiz.title}
-      </h2>
+      </h2> */}
       {result ? (
         <>
           <p className="mb-4 p-4 border rounded-xl">
@@ -77,25 +65,26 @@ const QuizDisplay = () => {
         </>
       ) : (
         <>
-          <p className="mb-4">{quiz.description}</p>
+          {/* <p className="mb-4">{quiz.description}</p> */}
           <ShadedButton className="bg-blue md:px-6">Поделиться</ShadedButton>
         </>
       )}
 
-      {quiz.questions.map((question, index) => (
-        <QuizQuestion
-          key={question.id}
-          question={question}
-          selectedOptionId={selectedOptions[question.id]}
-          setSelectedOptionId={(id) =>
-            setSelectedOptions((prev) => ({ ...prev, [question.id]: id }))
-          }
-          correctAnswerId={answers ? answers[index] : null}
-        />
-      ))}
+      {!result &&
+        quiz?.questions.map((question: any, index: number) => (
+          <QuizQuestion
+            key={question.id}
+            question={question}
+            selectedOptionId={selectedOptions[question.id]}
+            setSelectedOptionId={(id) =>
+              setSelectedOptions((prev) => ({ ...prev, [question.id]: id }))
+            }
+            correctAnswerId={answers ? answers[index] : null}
+          />
+        ))}
 
       {result == null && (
-        <ShadedButton className="bg-blue md:px-6" onClick={getAnswers}>
+        <ShadedButton className="bg-blue md:px-6" onClick={checkAnswers}>
           Проверить ответы
         </ShadedButton>
       )}
