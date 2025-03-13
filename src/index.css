@@ -18,6 +18,9 @@
 
 body {
   margin: 0;
+  background-color: black;
+  padding: 121px 100px 100px 95px;
+  box-sizing: border-box; /* Учитываем паддинги внутри размера body */;
 }
 
 h1 {

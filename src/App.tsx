@@ -6,6 +6,7 @@ import MobileHeader from "./components/MobileHeader"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { useEffect } from "react"
 import { getToken } from "./lib/api"
+import MainPage from "@/components/MainPage.tsx";
 
 function App() {
   useEffect(() => {
@@ -13,7 +14,9 @@ function App() {
   }, [])
 
   return (
-    <Router>
+      <MainPage/>
+  )
+    /*<Router>
       <MobileHeader />
       <div className="flex h-screen bg-layoutBG md:bg-backgroundGray md:p-4 pb-0 md:pb-4 gap-2 pt-16 md:pt-2">
         <Sidebar />
@@ -25,7 +28,8 @@ function App() {
         </main>
       </div>
     </Router>
-  )
+       */
+
 }
 
 export default App
