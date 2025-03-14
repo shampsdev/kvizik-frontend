@@ -6,7 +6,7 @@ import MobileHeader from "./components/MobileHeader"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { useEffect } from "react"
 import { getToken } from "./lib/api"
-import MainPage from "@/components/MainPage.tsx";
+import MainPage from "@/components/MainPage/MainPage.tsx";
 
 function App() {
   useEffect(() => {
