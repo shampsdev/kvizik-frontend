@@ -18,6 +18,22 @@
     background-color: darkgray;
     border-radius: 18px;
 }
+.infoSectionButton {
+    width: 109px;
+    height: 29px;
+    gap: 9px;
+    border-radius: 36px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-right: 13px;
+    padding-bottom: 6px;
+    padding-left: 13px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 121%;
+    letter-spacing: -3%;
+
+}
 
 .tgSection {
     order: 1;
@@ -82,22 +98,52 @@
     flex-direction: column;
     width: 513px;
     margin: auto;
+    padding-top: 130px;
+    padding-bottom: 34px;
+
+
 }
 .MacScreen{
     display: flex;
     justify-content: center;
+    padding-bottom: 136px;
 }
 .reviewButton{
     display: flex;
     justify-content: center;
+    width: 68px;
+    height: 29px;
+    gap: 9px;
+    border-radius: 36px;
+    border-width: 1px;
+    padding-top: 6px;
+    padding-right: 13px;
+    padding-bottom: 6px;
+    padding-left: 13px;
+    color: white;
+
 }
 .reviewH1{
     display: flex;
     justify-content: center;
+    padding-bottom: 34px;
 }
 .reviewH3{
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-bottom: 34px;
 }
+.forWho{
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    padding-bottom: 90px;
+}
+.forWhoUse{
+    display: flex;
+    justify-content: space-around;
+}
+
 /*organize css + rename css classes*/
