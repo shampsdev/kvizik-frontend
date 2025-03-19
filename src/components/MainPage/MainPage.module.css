@@ -144,6 +144,17 @@
 .forWhoUse{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 136px;
 }
-
+.root{
+    width: 1440px;
+}
+.footer{
+    width: 100%;
+    height: 244px;
+    border-width: 2px;
+    top: 2390px;
+    display: flex;
+    justify-content: center;
+}
 /*organize css + rename css classes*/
