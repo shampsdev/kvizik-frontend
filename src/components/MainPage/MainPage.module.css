@@ -4,7 +4,6 @@
     height: 448px;
     grid-template-columns:513px 1fr;
     column-gap: 59px;
-
 }
 .section {
     border-radius: 18px;
@@ -89,6 +88,7 @@
     grid-template-columns: 316px 316px;
     column-gap: 41px;
     row-gap: 35px;
+    width: 673px;
 
 }
 .review{
@@ -152,7 +152,7 @@
 .footer{
     width: 100%;
     height: 244px;
-    border-width: 2px;
+    border: none;
     top: 2390px;
     display: flex;
     justify-content: center;

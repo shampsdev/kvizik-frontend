@@ -8,7 +8,7 @@ import Student from "../../assets/Student.png"
 import forTeacher from "../../assets/for-teacher.png"
 import forStudents from "../../assets/for-students.png"
 import forDevelopers from "../../assets/for-developers.png"
-import imgAi from  "../../assets/imgAi.png"
+import imgAi from "../../assets/imgAi.png"
 import TgSection from "@/components/MainPage/TgSection/TgSection.tsx";
 
 const MainPage = () => {
@@ -30,8 +30,7 @@ const MainPage = () => {
                     <div style={{
                         width: "513px",
                         height: "183.60000610351562px",
-                        gap: "10.8px"
-
+                        gap: "10.8px",
                     }}>
                         <div style={{
                             fontSize: "45px",
@@ -55,7 +54,7 @@ const MainPage = () => {
                                 gap: "5px",
 
                             }}>
-                                <img src={imgAi}/>
+                                <img src={imgAi} alt={"sorry,image was lost"}/>
                                 <div style={{
                                     width: "371px",
                                     height: "54px",
@@ -160,36 +159,78 @@ const MainPage = () => {
                 </div>
                 <div className={styles.forWhoUse}>
                     <div style={{
-                        width:"352px"
+                        width: "352px"
                     }}>
-                        <img src={Teacher}/>
-                        <img src={forTeacher}/>
-                        <h3 style={{color:"white",justifyContent:"center"}}>Быстрая генерация тестов по тексту с возможностью разослать ученикам тест</h3>
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "center"
+                        }}>
+                            <img src={Teacher} alt={"sorry,image was lost"}/>
+                        </div>
+
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "center"
+                        }}>
+                            <img src={forTeacher} alt={"sorry,image was lost"}/>
+                        </div>
+                        <h3 style={{color: "white", justifyContent: "center"}}>Быстрая генерация тестов по тексту с
+                            возможностью разослать ученикам тест</h3>
                     </div>
                     <div style={{
-                        width:"352px"
+                        width: "352px"
                     }}>
-                        <img src={Student}/>
-                        <img src={forStudents}/>
-                        <h3 style={{color:"white", justifyContent:"center"}}>Самоподготовка по любым материалам быстрее, используя ИИ-инструменты</h3>
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "center"
+                        }}>
+                            <img src={Student} alt={"sorry,image was lost"}/>
+                        </div>
+
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "center"
+                        }}>
+                            <img src={forStudents} alt={"sorry,image was lost"}/>
+                        </div>
+
+
+                        <h3 style={{color: "white", justifyContent: "center"}}>Самоподготовка по любым материалам
+                            быстрее, используя ИИ-инструменты</h3>
                     </div>
                     <div style={{
-                        width:"283px"
+                        width: "283px",
                     }}>
-                        <img src={Developer}/>
-                        <img src={forDevelopers}/>
-                        <h3 style={{color:"white",justifyContent:"center"}}>Интеграция генератора тестов в их сервисы с помощью API</h3>
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "center"
+                        }}>
+                            <img src={Developer} alt={"sorry,image was lost"}/>
+                        </div>
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "center"
+                        }}>
+                            <img src={forDevelopers} alt={"sorry,image was lost"}/>
+                        </div>
+
+
+                        <h3 style={{color: "white", justifyContent: "center"}}>Интеграция генератора тестов в их сервисы
+                            с помощью API
+                        </h3>
                     </div>
                 </div>
+                <hr style={{width: "100%", color: "white", height: "5px"}}/>
             </div>
             <div className={styles.footer}>
+
                 <div style={{
                     width: "344px",
                     height: "86px",
                     top: "143px",
                     left: "548px",
-                    display:"flex",
-                    justifyContent:"center",
+                    display: "flex",
+                    justifyContent: "center",
                     flexDirection: "column",
 
                 }}>
@@ -198,7 +239,6 @@ const MainPage = () => {
                         height: "38px",
                         top: "57px",
                         left: "548px",
-
 
 
                     }}>
@@ -215,9 +255,9 @@ const MainPage = () => {
                         }}>Подпишитесь на наш Telegram-канал, чтобы следить за новостями разработки</h3>
                     </div>
                     <div style={{
-                        paddingTop:"17px",
-                        display:"flex",
-                        justifyContent:"center"
+                        paddingTop: "17px",
+                        display: "flex",
+                        justifyContent: "center"
                     }}>
                         <button style={{
                             width: "126px",
@@ -226,13 +266,12 @@ const MainPage = () => {
                             borderWidth: "1px",
                             top: "112px",
                             left: "657px",
-                            backgroundColor:"white",
-
-                        }}>Подписаться</button>
+                            backgroundColor: "white",
+                        }}>Подписаться
+                        </button>
                     </div>
                 </div>
             </div>
-
         </div>
 
     );
