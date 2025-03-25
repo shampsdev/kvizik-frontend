@@ -31,12 +31,16 @@
   src: url('./assets/fonts/inter-v18-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   background-color: black;
-  padding: 121px 100px 100px 95px;
-  box-sizing: border-box; /* Учитываем паддинги внутри размера body */;
+  color: white;
 }
 
 h1 {

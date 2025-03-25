@@ -1,0 +1,16 @@
+.test {
+color: white;
+}
+
+.try_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.try_container{
+  background: gray;
+  width: 1440px;
+  display: flex;
+  justify-content: space-evenly;
+}
