@@ -1,0 +1,63 @@
+.InfoButtons{
+    width: 327px;
+    height: 29px;
+    gap: 9px;
+}
+.BoldText{
+    width: 513px;
+    height: 183px;
+    gap: 10px;
+}
+.BoldH1{
+    font-size: 45px;
+    line-height:121%;
+    letter-spacing: -3%;
+    font-weight: 500;
+    width: 513px;
+    height: 54px;
+    padding-top: 18px;
+}
+.SmallText{
+    width: 513px;
+    height: 54px;
+    gap: 23.76px;
+}
+.SmallTextWithImg{
+    width: 111px;
+    height: 53px;
+    gap: 5px;
+}
+.SmallTextAi{
+    width: 371px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 121%;
+    letter-spacing: -3%;
+    text-align: center;
+    padding-top: 11px;
+}
+.SmallTextTopics{
+    width: 513px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 121%;
+    letter-spacing: -3%;
+    padding-top: 11px;
+}
+.SmallTextPar{
+    width: 513px;
+    height: 60px;
+    font-family: Inter;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    padding-top: 18px;
+}
+.TryButton{
+    padding-top: 41px;
+    display: flex;
+    justify-content: center;
+}
