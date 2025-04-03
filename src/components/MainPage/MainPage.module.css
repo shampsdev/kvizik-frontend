@@ -157,4 +157,26 @@
     display: flex;
     justify-content: center;
 }
+.divReviewButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.divForUse{
+    width: 352px;
+}
+.contentToCenter{
+    display: flex;
+    justify-content: center;
+}
+.h3ForUse{
+    color: white;
+    justify-content: center;
+
+}
+.whiteLine{
+    width: 100%;
+    color: white;
+    height: 5px;
+}
 /*organize css + rename css classes*/

@@ -12,7 +12,7 @@ const ForWhoSection = () => {
         <div className={styles.reviewForWho}>
             <div className={styles.forWho}>
                 <div>
-                    <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
+                    <div  className={styles.divReviewButton} >
                         <div className={styles.reviewButton}>
                             <button>Обзор</button>
                         </div>
@@ -29,70 +29,46 @@ const ForWhoSection = () => {
                 </div>
             </div>
             <div className={styles.forWhoUse}>
-                <div style={{
-                    width: "352px"
-                }}>
-                    <div style={{
-                        display: "flex",
-                        justifyContent: "center"
-                    }}>
+                <div  className={styles.divForUse}>
+                    <div className={styles.contentToCenter} >
                         <img src={Teacher} alt={"sorry,image was lost"}/>
                     </div>
 
-                    <div style={{
-                        display: "flex",
-                        justifyContent: "center"
-                    }}>
+                    <div className={styles.contentToCenter}>
                         <img src={forTeacher} alt={"sorry,image was lost"}/>
                     </div>
-                    <h3 style={{color: "white", justifyContent: "center"}}>Быстрая генерация тестов по тексту с
+                    <h3 className={styles.h3ForUse}>Быстрая генерация тестов по тексту с
                         возможностью разослать ученикам тест</h3>
                 </div>
-                <div style={{
-                    width: "352px"
-                }}>
-                    <div style={{
-                        display: "flex",
-                        justifyContent: "center"
-                    }}>
+                <div  className={styles.divForUse}>
+                    <div className={styles.contentToCenter}>
                         <img src={Student} alt={"sorry,image was lost"}/>
                     </div>
 
-                    <div style={{
-                        display: "flex",
-                        justifyContent: "center"
-                    }}>
+                    <div className={styles.contentToCenter}>
                         <img src={forStudents} alt={"sorry,image was lost"}/>
                     </div>
 
 
-                    <h3 style={{color: "white", justifyContent: "center"}}>Самоподготовка по любым материалам
+                    <h3 className={styles.h3ForUse}>Самоподготовка по любым материалам
                         быстрее, используя ИИ-инструменты</h3>
                 </div>
-                <div style={{
-                    width: "283px",
-                }}>
-                    <div style={{
-                        display: "flex",
-                        justifyContent: "center"
-                    }}>
+                <div className={styles.divForUse}>
+                    <div className={styles.contentToCenter}>
                         <img src={Developer} alt={"sorry,image was lost"}/>
                     </div>
-                    <div style={{
-                        display: "flex",
-                        justifyContent: "center"
-                    }}>
+                    <div className={styles.contentToCenter}>
                         <img src={forDevelopers} alt={"sorry,image was lost"}/>
                     </div>
 
 
-                    <h3 style={{color: "white", justifyContent: "center"}}>Интеграция генератора тестов в их
+                    <h3 className={styles.h3ForUse}>Интеграция генератора тестов в их
                         сервисы
                         с помощью API
                     </h3>
                 </div>
             </div>
-            <hr style={{width: "100%", color: "white", height: "5px"}}/>
+            <hr className={styles.whiteLine}/>
         </div>
     );
 };
