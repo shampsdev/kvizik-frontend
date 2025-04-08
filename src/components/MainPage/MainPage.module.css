@@ -17,22 +17,7 @@
     background-color: darkgray;
     border-radius: 18px;
 }
-.infoSectionButton {
-    width: 109px;
-    height: 29px;
-    gap: 9px;
-    border-radius: 36px;
-    border-width: 1px;
-    padding-top: 6px;
-    padding-right: 13px;
-    padding-bottom: 6px;
-    padding-left: 13px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 121%;
-    letter-spacing: -3%;
 
-}
 
 .tgSection {
     order: 1;
@@ -47,40 +32,8 @@
     grid-row: 2/3;
 }
 
-.forWhomSection {
-    order: 3;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-rows:50% 50%;
-    justify-content:center;
-    align-items:center
-}
-.forWhoButton{
-    width: 119px;
-    height: 29px;
-    gap: 5px;
-    order: 0;
-    grid-row: 1/2;
-    color: white;
-    background: #1E1E1E;
-    border: 1px solid #3B3B3B;
-    border-radius: 36px;
-    display: flex;
-    justify-content: center;
 
 
-
-}
-.forWhoImage{
-    width: 242px;
-    height: 74px;
-    gap: 10px;
-    order: 1;
-    grid-row: 2/3;
-
-
-}
 
 .secondary {
     display: grid;
@@ -91,61 +44,13 @@
     width: 673px;
 
 }
-.review{
-    display: flex;
-    justify-content: center;
-    color: white;
-    flex-direction: column;
-    width: 513px;
-    margin: auto;
-    padding-top: 130px;
-    padding-bottom: 34px;
 
 
-}
-.MacScreen{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 136px;
-}
-.reviewButton{
-    display: flex;
-    justify-content: center;
-    width: 68px;
-    height: 29px;
-    gap: 9px;
-    border-radius: 36px;
-    border-width: 1px;
-    padding-top: 6px;
-    padding-right: 13px;
-    padding-bottom: 6px;
-    padding-left: 13px;
-    color: white;
 
-}
-.reviewH1{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 34px;
-}
-.reviewH3{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 34px;
-}
-.forWho{
-    display: flex;
-    align-items: center;
-    color: white;
-    flex-direction: column;
-    padding-bottom: 90px;
-}
-.forWhoUse{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 136px;
-}
+
+
+
+
 .root{
     width: 1440px;
 }
@@ -157,26 +62,9 @@
     display: flex;
     justify-content: center;
 }
-.divReviewButton{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+
 .divForUse{
     width: 352px;
 }
-.contentToCenter{
-    display: flex;
-    justify-content: center;
-}
-.h3ForUse{
-    color: white;
-    justify-content: center;
 
-}
-.whiteLine{
-    width: 100%;
-    color: white;
-    height: 5px;
-}
 /*organize css + rename css classes*/

@@ -20,7 +20,7 @@ const MainPage = () => {
                     <ForWhomSection/>
                 </div>
             </div>
-            <div className={styles.review}>
+            <div className={"flex flex-col justify-center text-white w-[513px] mx-auto pt-[130px] pb-[34px]"}>
                 <ReviewSection/>
             </div>
                <ForWhoSection/>

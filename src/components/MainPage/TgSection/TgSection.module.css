@@ -1,32 +1,6 @@
-.container {
-    padding: 30px 69px 30px 41px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.textContainer {
-    color: #E1E1E1;
-    width: 318px;
-    height: 48px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -3%;
-    text-align: center;
-
-
-
-}
-
-.imageContainer {
-    width: 182px;
-    height: 69px;
-}
 .button{
     background-color: white;
-
     color:black;
-    /*font-size: 14px;*/
     width: 113;
     height: 29;
     gap: 9px;
@@ -36,5 +10,4 @@
     padding-right: 13px;
     padding-bottom: 6px;
     padding-left: 13px;
-
 }

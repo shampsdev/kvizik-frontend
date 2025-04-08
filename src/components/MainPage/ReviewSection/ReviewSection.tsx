@@ -1,25 +1,24 @@
-
-import styles from "@/components/MainPage/MainPage.module.css";
 import MacScreen from "@/assets/MacScreen.png";
 
 const ReviewSection = () => {
     return (
         <div>
-            <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
-                <div className={styles.reviewButton}>
+            <div className={"w-full flex justify-center"}>
+                <div
+                    className={"flex justify-center w-[68px] h-[29px] gap-[9px] rounded-[36px] border border-solid border-current pt-[6px] pr-[13px] pb-[6px] pl-[13px] text-white"}>
                     <button>Обзор</button>
                 </div>
             </div>
 
-            <div className={styles.reviewH1}>
+            <div className={"flex justify-center pb-[34px]"}>
                 <h1>Как работает</h1>
             </div>
-            <div className={styles.reviewH3}>
+            <div className={"flex justify-center text-center pb-[34px]"}>
                 <h3>Тесты по текстам, заметки по темам для подготовки к экзаменам! Оставьте заявку на ранний
                     доступ</h3>
             </div>
 
-            <div className={styles.MacScreen}>
+            <div className={"flex justify-center text-center pb-[136px]"}>
                 <img src={MacScreen} alt={"sorry,image was lost"}/>
             </div>
         </div>
