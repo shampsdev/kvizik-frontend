@@ -1,13 +1,13 @@
-.button{
-    background-color: white;
-    color:black;
-    width: 113;
-    height: 29;
-    gap: 9px;
-    border-radius: 36px;
-    border-width: 1px;
-    padding-top: 6px;
-    padding-right: 13px;
-    padding-bottom: 6px;
-    padding-left: 13px;
+.button {
+  background-color: white;
+  color: black;
+  width: 113;
+  height: 29;
+  gap: 9px;
+  border-radius: 36px;
+  border-width: 1px;
+  padding-top: 6px;
+  padding-right: 13px;
+  padding-bottom: 6px;
+  padding-left: 13px;
 }

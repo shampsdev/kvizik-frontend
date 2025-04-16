@@ -7,10 +7,10 @@
   resolved "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
-"@esbuild/win32-x64@0.21.5":
+"@esbuild/darwin-arm64@0.21.5":
   version "0.21.5"
-  resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz"
-  integrity sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw==
+  resolved "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.21.5.tgz"
+  integrity sha512-DwqXqZyuk5AiWWf3UfLiRDJ5EDd49zg6O9wclZ7kUMv2WRFr4HKjXp/5t8JZ11QbQfUS6/cRCKGwYhtNAY88kQ==
 
 "@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.0":
   version "4.4.0"
@@ -160,15 +160,15 @@
   resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.21.0.tgz"
   integrity sha512-xfSkCAchbdG5PnbrKqFWwia4Bi61nH+wm8wLEqfHDyp7Y3dZzgqS2itV8i4gAq9pC2HsTpwyBC6Ds8VHZ96JlA==
 
-"@rollup/rollup-win32-x64-msvc@4.22.4":
+"@rollup/rollup-darwin-arm64@4.22.4":
   version "4.22.4"
-  resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.22.4.tgz"
-  integrity sha512-j8pPKp53/lq9lMXN57S8cFz0MynJk8OWNuUnXct/9KCpKU7DgU3bYMJhwWmcqC0UU29p8Lr0/7KEVcaM6bf47Q==
+  resolved "https://registry.npmjs.org/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.22.4.tgz"
+  integrity sha512-xMM9ORBqu81jyMKCDP+SZDhnX2QEVQzTcC6G18KlTQEzWK8r/oNZtKuZaCcHhnsa6fEeOBionoyl5JsAbE/36Q==
 
-"@swc/core-win32-x64-msvc@1.7.28":
+"@swc/core-darwin-arm64@1.7.28":
   version "1.7.28"
-  resolved "https://registry.npmjs.org/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.7.28.tgz"
-  integrity sha512-jyXeoq6nX8abiCy2EpporsC5ywNENs4ocYuvxo1LSxDktWN1E2MTXq3cdJcEWB2Vydxq0rDcsGyzkRPMzFhkZw==
+  resolved "https://registry.npmjs.org/@swc/core-darwin-arm64/-/core-darwin-arm64-1.7.28.tgz"
+  integrity sha512-BNkj6enHo2pdzOpCtQGKZbXT2A/qWIr0CVtbTM4WkJ3MCK/glbFsyO6X59p1r8+gfaZG4bWYnTTu+RuUAcsL5g==
 
 "@swc/core@^1.5.7":
   version "1.7.28"
@@ -211,10 +211,10 @@
     lightningcss "1.29.2"
     tailwindcss "4.1.2"
 
-"@tailwindcss/oxide-win32-x64-msvc@4.1.2":
+"@tailwindcss/oxide-darwin-arm64@4.1.2":
   version "4.1.2"
-  resolved "https://registry.npmjs.org/@tailwindcss/oxide-win32-x64-msvc/-/oxide-win32-x64-msvc-4.1.2.tgz"
-  integrity sha512-lYCdkPxh9JRHXoBsPE8Pu/mppUsC2xihYArNAESub41PKhHTnvn6++5RpmFM+GLSt3ewyS8fwCVvht7ulWm6cw==
+  resolved "https://registry.npmjs.org/@tailwindcss/oxide-darwin-arm64/-/oxide-darwin-arm64-4.1.2.tgz"
+  integrity sha512-ZRtiHSnFYHb4jHKIdzxlFm6EDfijTCOT4qwUhJ3GWxfDoW2yT3z/y8xg0nE7e72unsmSj6dtfZ9Y5r75FIrlpA==
 
 "@tailwindcss/oxide@4.1.2":
   version "4.1.2"
@@ -871,6 +871,11 @@ fraction.js@^4.3.7:
   resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.3.7.tgz"
   integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
 
+fsevents@~2.3.2, fsevents@~2.3.3:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
+
 function-bind@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz"
@@ -1066,10 +1071,10 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
-lightningcss-win32-x64-msvc@1.29.2:
+lightningcss-darwin-arm64@1.29.2:
   version "1.29.2"
-  resolved "https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.29.2.tgz"
-  integrity sha512-EdIUW3B2vLuHmv7urfzMI/h2fmlnOQBk1xlsDxkN1tCWKjNFjfLhGxYk8C8mzpSfr+A6jFFIi8fU6LbQGsRWjA==
+  resolved "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.29.2.tgz"
+  integrity sha512-cK/eMabSViKn/PG8U/a7aCorpeKLMlK0bQeNHmdb7qUnBkNPnL+oV5DjJUo0kqWsJUapZsM4jCfYItbqBDvlcA==
 
 lightningcss@^1.21.0, lightningcss@1.29.2:
   version "1.29.2"

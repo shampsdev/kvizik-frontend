@@ -1,4 +1,3 @@
-import styles from './MainPage.module.css';
 import TgSection from "@/components/MainPage/TgSection/TgSection.tsx";
 import ScreenshotSection from "@/components/MainPage/ScreenshotSection/ScreenshotSection.tsx";
 import InfoSection from "@/components/MainPage/InfoSection/InfoSection.tsx";
@@ -8,26 +7,33 @@ import ForWhoSection from "@/components/MainPage/ForWhoSection/ForWhoSection.tsx
 import FooterSection from "@/components/MainPage/FooterSection/FooterSection.tsx";
 
 const MainPage = () => {
-    return (
-        <div style={{
-            width: "1440px"
-        }}>
-            <div className={styles.mainDiv}>
-                <InfoSection/>
-                <div className={`${styles.secondary}`}>
-                    <TgSection/>
-                    <ScreenshotSection/>
-                    <ForWhomSection/>
-                </div>
+  return (
+    <div className="max-w-[1440px] mx-auto">
+      <div className="flex flex-row justify-center gap-[59px] items-stretch">
+        <InfoSection />
+        <div className="flex-[3] flex flex-col gap-[35px]">
+          <TgSection />
+          <div className="flex flex-row items-stretch gap-[41px] w-full">
+            <div className="flex-1">
+              <ScreenshotSection />
             </div>
-            <div className={"flex flex-col justify-center text-white w-[513px] mx-auto pt-[130px] pb-[34px]"}>
-                <ReviewSection/>
+            <div className="flex-1">
+              <ForWhomSection />
             </div>
-               <ForWhoSection/>
-                <FooterSection/>
-            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className={
+          "flex flex-col justify-center text-white w-[513px] mx-auto pt-[130px] pb-[34px]"
+        }
+      >
+        <ReviewSection />
+      </div>
+      <ForWhoSection />
+      <FooterSection />
+    </div>
+  );
+};
 
-            );
-            };
-
-            export default MainPage;
+export default MainPage;
