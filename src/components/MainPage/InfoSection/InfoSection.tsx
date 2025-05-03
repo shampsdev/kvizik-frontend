@@ -1,4 +1,6 @@
 import imgAi from "@/assets/imgAi.png";
+import imgAi2 from "@/assets/imgAi2.png";
+import {Link} from "react-router-dom";
 
 const InfoSection = () => {
   return (
@@ -22,7 +24,8 @@ const InfoSection = () => {
           </div>
           <div>
             <div className="flex flex-row items-center gap-[23px]">
-              <img src={imgAi} alt={"sorry,image was lost"} />
+              <img src={imgAi} alt={"sorry,image was lost"}/>
+              <img src={imgAi2} alt={"sorry,image was lost"}/>
               <div className="text-white font-medium text-[28px] leading-[121%] tracking-[-3%] text-center">
                 ИИ-инструменты
               </div>
@@ -38,10 +41,12 @@ const InfoSection = () => {
           Оставьте заявку на ранний доступ
         </div>
       </div>
+      <Link to={"/upload"}>
+        <button className="font-medium text-black py-[6px] px-[13px] w-full bg-white rounded-[18px]">
+          Попробовать
+        </button>
+      </Link>
 
-      <button className="font-medium text-black py-[6px] px-[13px] w-full bg-white rounded-[18px]">
-        Попробовать
-      </button>
     </div>
   );
 };
